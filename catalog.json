@@ -1,0 +1,1154 @@
+{
+  "site": "https://cs-geni.github.io/public/",
+  "tracks": [
+    {
+      "id": "onramp",
+      "title": "Start from zero",
+      "eyebrow": "CS0 · Onboarding",
+      "description": "Build confidence with computers, code, and the command line—no prior experience assumed.",
+      "courseIds": [
+        "computer-thinking",
+        "python-first-steps"
+      ]
+    },
+    {
+      "id": "programming",
+      "title": "Programming foundations",
+      "eyebrow": "Core skill",
+      "description": "Learn to design programs, break down problems, and write code you can trust.",
+      "courseIds": [
+        "python-first-steps",
+        "program-design"
+      ]
+    },
+    {
+      "id": "algorithms",
+      "title": "Data structures & algorithms",
+      "eyebrow": "CS core",
+      "description": "Choose the right structure, reason about efficiency, and solve problems systematically.",
+      "courseIds": [
+        "data-structures",
+        "algorithmic-thinking"
+      ]
+    },
+    {
+      "id": "math",
+      "title": "Math for computer science",
+      "eyebrow": "CS core",
+      "description": "Build proof, logic, graph, counting, and probability skills through visual problems.",
+      "courseIds": [
+        "discrete-math"
+      ]
+    },
+    {
+      "id": "systems",
+      "title": "Systems & architecture",
+      "eyebrow": "Under the hood",
+      "description": "Connect bits, memory, processors, compilers, and the programs they run.",
+      "courseIds": [
+        "inside-computers"
+      ]
+    },
+    {
+      "id": "os",
+      "title": "Operating systems",
+      "eyebrow": "CS core",
+      "description": "Understand processes, concurrency, memory, persistence, and the Unix model.",
+      "courseIds": [
+        "operating-systems"
+      ]
+    },
+    {
+      "id": "networks",
+      "title": "Networks & distributed systems",
+      "eyebrow": "Connected world",
+      "description": "Follow a request across the internet and design reliable networked software.",
+      "courseIds": [
+        "computer-networks"
+      ]
+    },
+    {
+      "id": "databases",
+      "title": "Databases",
+      "eyebrow": "Data foundations",
+      "description": "Model information, query it with SQL, and make data systems dependable.",
+      "courseIds": [
+        "database-design"
+      ]
+    },
+    {
+      "id": "engineering",
+      "title": "Software engineering & DevOps",
+      "eyebrow": "Professional practice",
+      "description": "Collaborate with Git, test effectively, ship safely, and operate real software.",
+      "courseIds": [
+        "git-collaboration",
+        "shipping-software"
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "eyebrow": "Defensive practice",
+      "description": "Develop a security mindset and learn to build safer systems from the start.",
+      "courseIds": [
+        "secure-by-design"
+      ]
+    },
+    {
+      "id": "ai-data",
+      "title": "AI & data",
+      "eyebrow": "Intelligent systems",
+      "description": "Move from data literacy to models, evaluation, and responsible machine learning.",
+      "courseIds": [
+        "data-ai-foundations"
+      ]
+    },
+    {
+      "id": "advanced",
+      "title": "Advanced electives",
+      "eyebrow": "Choose your depth",
+      "description": "Build an interpreter, explore distributed systems, or study graphics and theory.",
+      "courseIds": [
+        "crafting-language"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "computer-thinking",
+      "trackId": "onramp",
+      "title": "Computer Science Without the Jargon",
+      "shortTitle": "CS without jargon",
+      "summary": "Learn what computers actually do, how programmers turn messy ideas into precise steps, and how to feel at home in a technical world.",
+      "level": "Beginner",
+      "hours": 8,
+      "lessons": 9,
+      "prerequisites": [
+        "Curiosity",
+        "Comfort using a web browser"
+      ],
+      "outcomes": [
+        "Explain how data and instructions work together",
+        "Translate everyday tasks into algorithms",
+        "Use files, folders, and a terminal with confidence",
+        "Recognize the major fields of computer science"
+      ],
+      "modules": [
+        {
+          "title": "Meet the machine",
+          "description": "A plain-language tour of hardware, software, data, and the internet.",
+          "lessons": [
+            "What makes a computer a computer?",
+            "Bits: tiny choices, big ideas",
+            "Files, programs, and operating systems"
+          ]
+        },
+        {
+          "title": "Think like a programmer",
+          "description": "Practice precise instructions, patterns, and useful decomposition.",
+          "lessons": [
+            "Algorithms in everyday life",
+            "Break a problem into pieces",
+            "When instructions go wrong"
+          ]
+        },
+        {
+          "title": "Your working toolkit",
+          "description": "Get comfortable with the tools learners and professionals use.",
+          "lessons": [
+            "Navigate your computer",
+            "Your first terminal commands",
+            "How to learn from errors"
+          ]
+        }
+      ],
+      "project": {
+        "title": "Design a tiny digital assistant",
+        "description": "Create a flowchart and precise instructions for a helpful everyday automation—no code required."
+      },
+      "sources": [
+        {
+          "title": "Introduction to Computer Science",
+          "authors": "OpenStax",
+          "url": "https://openstax.org/subjects/computer-science",
+          "license": "CC BY 4.0",
+          "access": "Openly remixable"
+        },
+        {
+          "title": "Introduction to Computing",
+          "authors": "David Evans",
+          "url": "https://computingbook.org/",
+          "license": "CC BY-NC-SA 3.0",
+          "access": "Openly remixable"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": "python-first-steps",
+      "trackId": "programming",
+      "title": "Python: Your First Programs",
+      "shortTitle": "Python first steps",
+      "summary": "Write useful programs from day one while learning variables, decisions, loops, functions, and the habit of testing your ideas.",
+      "level": "Beginner",
+      "hours": 24,
+      "lessons": 16,
+      "prerequisites": [
+        "Computer Science Without the Jargon, or equivalent computer comfort"
+      ],
+      "outcomes": [
+        "Write and run small Python programs",
+        "Model data with core Python types",
+        "Use decisions, loops, and functions",
+        "Debug common errors methodically"
+      ],
+      "modules": [
+        {
+          "title": "Make the computer respond",
+          "description": "Start with expressions, values, variables, and input.",
+          "lessons": [
+            "Hello, Python",
+            "Values have types",
+            "Remember with variables",
+            "Ask the user"
+          ]
+        },
+        {
+          "title": "Make decisions",
+          "description": "Control what happens and repeat useful work.",
+          "lessons": [
+            "True, false, and comparisons",
+            "Choose with if",
+            "Repeat with loops",
+            "Trace your program"
+          ]
+        },
+        {
+          "title": "Design with functions",
+          "description": "Turn solutions into small, reusable parts.",
+          "lessons": [
+            "Why functions matter",
+            "Inputs and outputs",
+            "Scope without surprises",
+            "Test a function"
+          ]
+        },
+        {
+          "title": "Work with collections",
+          "description": "Store and transform groups of related values.",
+          "lessons": [
+            "Lists",
+            "Strings as sequences",
+            "Dictionaries",
+            "Read and write files"
+          ]
+        }
+      ],
+      "project": {
+        "title": "Personal study planner",
+        "description": "Build a command-line planner that stores tasks, estimates study time, and reports what to do next."
+      },
+      "sources": [
+        {
+          "title": "Think Python, 3rd edition",
+          "authors": "Allen B. Downey",
+          "url": "https://allendowney.github.io/ThinkPython/",
+          "license": "CC BY-NC-SA 4.0",
+          "access": "Openly remixable"
+        },
+        {
+          "title": "Automate the Boring Stuff with Python",
+          "authors": "Al Sweigart",
+          "url": "https://automatetheboringstuff.com/",
+          "license": "Free online edition; all rights reserved",
+          "access": "Free to read"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": "program-design",
+      "trackId": "programming",
+      "title": "Designing Reliable Programs",
+      "shortTitle": "Program design",
+      "summary": "Move beyond syntax: turn requirements into small components, manage complexity, test behavior, and communicate your design.",
+      "level": "Intermediate",
+      "hours": 28,
+      "lessons": 9,
+      "prerequisites": [
+        "Python: Your First Programs"
+      ],
+      "outcomes": [
+        "Turn a problem statement into a program design",
+        "Choose clear data representations",
+        "Write focused automated tests",
+        "Refactor without changing behavior"
+      ],
+      "modules": [
+        {
+          "title": "From problem to design",
+          "description": "Use examples, signatures, and small steps.",
+          "lessons": [
+            "Clarify the problem",
+            "Examples before code",
+            "Data drives design"
+          ]
+        },
+        {
+          "title": "Trust your code",
+          "description": "Build feedback loops with tests and debugging.",
+          "lessons": [
+            "Test behavior",
+            "Find the smallest failure",
+            "Refactor safely"
+          ]
+        },
+        {
+          "title": "Programs that grow",
+          "description": "Organize modules and handle failure explicitly.",
+          "lessons": [
+            "Separate responsibilities",
+            "Model errors",
+            "Read unfamiliar code"
+          ]
+        }
+      ],
+      "project": {
+        "title": "Library lending service",
+        "description": "Design and test a small application with users, books, loans, and clear error states."
+      },
+      "sources": [
+        {
+          "title": "How to Design Programs",
+          "authors": "Felleisen, Findler, Flatt, Krishnamurthi",
+          "url": "https://htdp.org/",
+          "license": "CC BY-NC-ND 2.0",
+          "access": "Free to read"
+        },
+        {
+          "title": "Composing Programs",
+          "authors": "John DeNero",
+          "url": "https://www.composingprograms.com/",
+          "license": "CC BY-SA 3.0",
+          "access": "Openly remixable"
+        }
+      ]
+    },
+    {
+      "id": "data-structures",
+      "trackId": "algorithms",
+      "title": "Data Structures in Practice",
+      "shortTitle": "Data structures",
+      "summary": "Build the structures behind fast software and learn when arrays, lists, stacks, queues, trees, maps, and graphs fit.",
+      "level": "Intermediate",
+      "hours": 34,
+      "lessons": 12,
+      "prerequisites": [
+        "Designing Reliable Programs",
+        "Comfort with functions and classes"
+      ],
+      "outcomes": [
+        "Implement core data structures",
+        "Compare time and space tradeoffs",
+        "Select structures for real requirements",
+        "Explain recursion with call diagrams"
+      ],
+      "modules": [
+        {
+          "title": "Measure the work",
+          "description": "Develop intuition for growth and efficiency.",
+          "lessons": [
+            "Why performance changes",
+            "Big O as a vocabulary",
+            "Measure real code"
+          ]
+        },
+        {
+          "title": "Linear structures",
+          "description": "Build arrays, linked lists, stacks, and queues.",
+          "lessons": [
+            "Arrays and dynamic arrays",
+            "Linked structures",
+            "Stacks and queues"
+          ]
+        },
+        {
+          "title": "Fast lookup",
+          "description": "Explore hashing, trees, and priority queues.",
+          "lessons": [
+            "Hash tables",
+            "Binary search trees",
+            "Heaps"
+          ]
+        },
+        {
+          "title": "Connected data",
+          "description": "Represent and traverse graphs.",
+          "lessons": [
+            "Graph models",
+            "Breadth-first search",
+            "Depth-first search"
+          ]
+        }
+      ],
+      "project": {
+        "title": "Route finder",
+        "description": "Model a transit network as a graph and find useful routes while explaining the tradeoffs."
+      },
+      "sources": [
+        {
+          "title": "Open Data Structures",
+          "authors": "Pat Morin",
+          "url": "https://opendatastructures.org/",
+          "license": "CC BY 2.5",
+          "access": "Openly remixable"
+        },
+        {
+          "title": "Think Data Structures",
+          "authors": "Allen B. Downey",
+          "url": "https://greenteapress.com/wp/think-data-structures/",
+          "license": "CC BY-NC-SA 4.0",
+          "access": "Openly remixable"
+        }
+      ],
+      "featured": true
+    },
+    {
+      "id": "algorithmic-thinking",
+      "trackId": "algorithms",
+      "title": "Algorithmic Problem Solving",
+      "shortTitle": "Algorithms",
+      "summary": "Learn reusable strategies—divide and conquer, greedy choice, dynamic programming, and graph algorithms—without puzzle-game tricks.",
+      "level": "Intermediate",
+      "hours": 42,
+      "lessons": 9,
+      "prerequisites": [
+        "Data Structures in Practice",
+        "Discrete Math for Builders"
+      ],
+      "outcomes": [
+        "Prove why an algorithm works",
+        "Analyze running time",
+        "Apply common design strategies",
+        "Recognize when tradeoffs beat a single best answer"
+      ],
+      "modules": [
+        {
+          "title": "Reason about algorithms",
+          "description": "Correctness and efficiency in plain language.",
+          "lessons": [
+            "State the promise",
+            "Loop invariants",
+            "Worst and average cases"
+          ]
+        },
+        {
+          "title": "Design strategies",
+          "description": "Build a toolbox of reusable approaches.",
+          "lessons": [
+            "Divide and conquer",
+            "Greedy algorithms",
+            "Dynamic programming"
+          ]
+        },
+        {
+          "title": "Graph problems",
+          "description": "Solve routing, dependency, and connection problems.",
+          "lessons": [
+            "Shortest paths",
+            "Minimum spanning trees",
+            "Topological order"
+          ]
+        }
+      ],
+      "project": {
+        "title": "Community delivery optimizer",
+        "description": "Compare algorithms that schedule deliveries under time and capacity constraints."
+      },
+      "sources": [
+        {
+          "title": "Algorithms",
+          "authors": "Jeff Erickson",
+          "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+          "license": "CC BY 4.0",
+          "access": "Openly remixable"
+        }
+      ]
+    },
+    {
+      "id": "discrete-math",
+      "trackId": "math",
+      "title": "Discrete Math for Builders",
+      "shortTitle": "Discrete math",
+      "summary": "Learn the logic, proofs, counting, graphs, and probability that make computer science click—through code and concrete examples.",
+      "level": "Intermediate",
+      "hours": 36,
+      "lessons": 9,
+      "prerequisites": [
+        "Python: Your First Programs",
+        "High-school algebra"
+      ],
+      "outcomes": [
+        "Read and write simple proofs",
+        "Use sets, logic, and relations",
+        "Count possibilities systematically",
+        "Model problems with graphs and probability"
+      ],
+      "modules": [
+        {
+          "title": "Logic and proof",
+          "description": "Make precise claims and support them.",
+          "lessons": [
+            "Propositions",
+            "Implication",
+            "Proof by induction"
+          ]
+        },
+        {
+          "title": "Count and relate",
+          "description": "Sets, functions, relations, and combinatorics.",
+          "lessons": [
+            "Set operations",
+            "Functions and relations",
+            "Counting without listing"
+          ]
+        },
+        {
+          "title": "Graphs and chance",
+          "description": "Model connections and uncertainty.",
+          "lessons": [
+            "Graph vocabulary",
+            "Trees and connectivity",
+            "Probability foundations"
+          ]
+        }
+      ],
+      "project": {
+        "title": "Fair tournament scheduler",
+        "description": "Use graphs and counting to generate and validate a tournament schedule."
+      },
+      "sources": [
+        {
+          "title": "Mathematics for Computer Science",
+          "authors": "Lehman, Leighton, Meyer",
+          "url": "https://courses.csail.mit.edu/6.042/spring18/mcs.pdf",
+          "license": "CC BY-SA 3.0",
+          "access": "Openly remixable"
+        },
+        {
+          "title": "Book of Proof",
+          "authors": "Richard Hammack",
+          "url": "https://www.people.vcu.edu/~rhammack/BookOfProof/",
+          "license": "CC BY-NC-ND 3.0",
+          "access": "Free to read"
+        }
+      ]
+    },
+    {
+      "id": "inside-computers",
+      "trackId": "systems",
+      "title": "Inside a Computer",
+      "shortTitle": "Computer systems",
+      "summary": "Travel from binary and logic gates through processors, memory, C programs, and the toolchain that turns code into action.",
+      "level": "Intermediate",
+      "hours": 38,
+      "lessons": 9,
+      "prerequisites": [
+        "Python: Your First Programs"
+      ],
+      "outcomes": [
+        "Explain binary representation",
+        "Trace instructions through a processor",
+        "Reason about memory and pointers",
+        "Describe compilation and linking"
+      ],
+      "modules": [
+        {
+          "title": "Bits become behavior",
+          "description": "Representation, logic, and digital building blocks.",
+          "lessons": [
+            "Binary and hex",
+            "Boolean logic",
+            "From gates to circuits"
+          ]
+        },
+        {
+          "title": "A programmable machine",
+          "description": "Processors, memory, and instructions.",
+          "lessons": [
+            "The CPU cycle",
+            "Memory hierarchy",
+            "Assembly as a lens"
+          ]
+        },
+        {
+          "title": "Systems programming",
+          "description": "Use C to understand memory and tools.",
+          "lessons": [
+            "C and the machine",
+            "Pointers and allocation",
+            "Compile and link"
+          ]
+        }
+      ],
+      "project": {
+        "title": "Tiny virtual machine",
+        "description": "Implement a small stack-based computer and run a custom instruction set."
+      },
+      "sources": [
+        {
+          "title": "Dive Into Systems",
+          "authors": "Matthews, Newhall, Webb",
+          "url": "https://diveintosystems.org/",
+          "license": "CC BY-NC-SA 4.0",
+          "access": "Openly remixable"
+        },
+        {
+          "title": "Computer Science from the Bottom Up",
+          "authors": "Ian Wienand",
+          "url": "https://bottomupcs.com/",
+          "license": "CC BY-SA 3.0",
+          "access": "Openly remixable"
+        }
+      ]
+    },
+    {
+      "id": "operating-systems",
+      "trackId": "os",
+      "title": "How Operating Systems Work",
+      "shortTitle": "Operating systems",
+      "summary": "Understand how an OS shares processors, isolates memory, coordinates concurrent work, and stores data reliably.",
+      "level": "Advanced",
+      "hours": 46,
+      "lessons": 9,
+      "prerequisites": [
+        "Inside a Computer",
+        "Data Structures in Practice"
+      ],
+      "outcomes": [
+        "Explain processes and scheduling",
+        "Reason about concurrency hazards",
+        "Describe virtual memory",
+        "Design a simple persistent storage layer"
+      ],
+      "modules": [
+        {
+          "title": "Virtualize the processor",
+          "description": "Processes, scheduling, and system calls.",
+          "lessons": [
+            "Process abstraction",
+            "Context switching",
+            "Scheduling policies"
+          ]
+        },
+        {
+          "title": "Coordinate work",
+          "description": "Threads, locks, and concurrency.",
+          "lessons": [
+            "Race conditions",
+            "Locks and condition variables",
+            "Deadlock"
+          ]
+        },
+        {
+          "title": "Memory and persistence",
+          "description": "Virtual memory, files, and reliability.",
+          "lessons": [
+            "Address spaces",
+            "Paging",
+            "Files and directories"
+          ]
+        }
+      ],
+      "project": {
+        "title": "Unix-style shell",
+        "description": "Build a small shell with processes, pipes, redirection, and careful error handling."
+      },
+      "sources": [
+        {
+          "title": "Operating Systems: Three Easy Pieces",
+          "authors": "Remzi and Andrea Arpaci-Dusseau",
+          "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+          "license": "CC BY-NC-SA 4.0",
+          "access": "Openly remixable"
+        }
+      ]
+    },
+    {
+      "id": "computer-networks",
+      "trackId": "networks",
+      "title": "Networks from First Principles",
+      "shortTitle": "Computer networks",
+      "summary": "Follow data from your app to the wire and back while learning layers, protocols, routing, HTTP, and reliable communication.",
+      "level": "Intermediate",
+      "hours": 36,
+      "lessons": 9,
+      "prerequisites": [
+        "Python: Your First Programs",
+        "Inside a Computer recommended"
+      ],
+      "outcomes": [
+        "Explain the internet layer by layer",
+        "Inspect HTTP and DNS traffic",
+        "Build a socket-based service",
+        "Reason about latency, reliability, and congestion"
+      ],
+      "modules": [
+        {
+          "title": "Packets and layers",
+          "description": "Build a useful mental model of network communication.",
+          "lessons": [
+            "Why layers?",
+            "Links and packets",
+            "Addresses and routes"
+          ]
+        },
+        {
+          "title": "Reliable communication",
+          "description": "Understand transport, congestion, and failure.",
+          "lessons": [
+            "UDP and TCP",
+            "Reliability",
+            "Congestion control"
+          ]
+        },
+        {
+          "title": "The application web",
+          "description": "DNS, HTTP, security, and sockets.",
+          "lessons": [
+            "Names with DNS",
+            "HTTP conversations",
+            "Build with sockets"
+          ]
+        }
+      ],
+      "project": {
+        "title": "Resilient chat service",
+        "description": "Build a multi-client chat protocol and test what happens under delay and disconnection."
+      },
+      "sources": [
+        {
+          "title": "Computer Networks: A Systems Approach",
+          "authors": "Peterson and Davie",
+          "url": "https://book.systemsapproach.org/",
+          "license": "CC BY 4.0",
+          "access": "Openly remixable"
+        },
+        {
+          "title": "Beej's Guide to Network Programming",
+          "authors": "Brian Hall",
+          "url": "https://beej.us/guide/bgnet/",
+          "license": "CC BY-NC-ND 3.0",
+          "access": "Free to read"
+        }
+      ]
+    },
+    {
+      "id": "database-design",
+      "trackId": "databases",
+      "title": "Databases That Make Sense",
+      "shortTitle": "Database design",
+      "summary": "Turn real-world information into clear data models, query with SQL, and understand indexes, transactions, and tradeoffs.",
+      "level": "Intermediate",
+      "hours": 30,
+      "lessons": 9,
+      "prerequisites": [
+        "Python: Your First Programs"
+      ],
+      "outcomes": [
+        "Design a normalized relational model",
+        "Write useful SQL queries",
+        "Explain indexes and query cost",
+        "Use transactions to preserve invariants"
+      ],
+      "modules": [
+        {
+          "title": "Model the world",
+          "description": "Entities, relationships, keys, and constraints.",
+          "lessons": [
+            "From nouns to tables",
+            "Keys and relationships",
+            "Normalization"
+          ]
+        },
+        {
+          "title": "Ask with SQL",
+          "description": "Retrieve and reshape data.",
+          "lessons": [
+            "Select and filter",
+            "Join related data",
+            "Group and summarize"
+          ]
+        },
+        {
+          "title": "Stay fast and correct",
+          "description": "Indexes, transactions, and application boundaries.",
+          "lessons": [
+            "How indexes help",
+            "Transactions",
+            "Schema change"
+          ]
+        }
+      ],
+      "project": {
+        "title": "Learning analytics database",
+        "description": "Design and query a database for courses, enrollments, lessons, and progress events."
+      },
+      "sources": [
+        {
+          "title": "Database Design, 2nd edition",
+          "authors": "Adrienne Watt and Nelson Eng",
+          "url": "https://opentextbc.ca/dbdesign01/",
+          "license": "CC BY 4.0",
+          "access": "Openly remixable"
+        },
+        {
+          "title": "PostgreSQL Documentation",
+          "authors": "PostgreSQL Global Development Group",
+          "url": "https://www.postgresql.org/docs/",
+          "license": "PostgreSQL License",
+          "access": "Openly remixable"
+        }
+      ]
+    },
+    {
+      "id": "git-collaboration",
+      "trackId": "engineering",
+      "title": "Git & Collaborative Development",
+      "shortTitle": "Git collaboration",
+      "summary": "Build a safe mental model of version control, work confidently with branches, and collaborate through clear reviews.",
+      "level": "Beginner",
+      "hours": 12,
+      "lessons": 9,
+      "prerequisites": [
+        "Comfort with files and folders"
+      ],
+      "outcomes": [
+        "Explain commits, branches, and remotes",
+        "Recover from common mistakes",
+        "Create focused pull requests",
+        "Give useful code review feedback"
+      ],
+      "modules": [
+        {
+          "title": "Save meaningful history",
+          "description": "Understand repositories, snapshots, and commits.",
+          "lessons": [
+            "Why version control",
+            "Stage and commit",
+            "Read history"
+          ]
+        },
+        {
+          "title": "Work in parallel",
+          "description": "Branches, merges, and remotes.",
+          "lessons": [
+            "Branch with purpose",
+            "Merge changes",
+            "Push and pull"
+          ]
+        },
+        {
+          "title": "Collaborate clearly",
+          "description": "Pull requests and code review.",
+          "lessons": [
+            "A reviewable change",
+            "Review with empathy",
+            "Resolve conflicts"
+          ]
+        }
+      ],
+      "project": {
+        "title": "Open-source contribution simulation",
+        "description": "Take a small issue from branch to pull request, review, conflict resolution, and merge."
+      },
+      "sources": [
+        {
+          "title": "Pro Git",
+          "authors": "Scott Chacon and Ben Straub",
+          "url": "https://git-scm.com/book/en/v2",
+          "license": "CC BY-NC-SA 3.0",
+          "access": "Openly remixable"
+        }
+      ]
+    },
+    {
+      "id": "shipping-software",
+      "trackId": "engineering",
+      "title": "Shipping & Operating Software",
+      "shortTitle": "Ship software",
+      "summary": "Connect testing, continuous integration, deployment, observability, and reliability into a humane delivery practice.",
+      "level": "Intermediate",
+      "hours": 26,
+      "lessons": 9,
+      "prerequisites": [
+        "Git & Collaborative Development",
+        "Designing Reliable Programs"
+      ],
+      "outcomes": [
+        "Design a practical test strategy",
+        "Build a continuous integration workflow",
+        "Choose useful service indicators",
+        "Plan safe releases and rollback"
+      ],
+      "modules": [
+        {
+          "title": "Quality as feedback",
+          "description": "Use tests and automation where they help most.",
+          "lessons": [
+            "The testing pyramid",
+            "Continuous integration",
+            "Fast feedback"
+          ]
+        },
+        {
+          "title": "Release safely",
+          "description": "Package, configure, deploy, and roll back.",
+          "lessons": [
+            "Build artifacts",
+            "Configuration",
+            "Deployment strategies"
+          ]
+        },
+        {
+          "title": "Operate with care",
+          "description": "Observe systems and learn from incidents.",
+          "lessons": [
+            "Signals that matter",
+            "Service objectives",
+            "Blameless learning"
+          ]
+        }
+      ],
+      "project": {
+        "title": "Production-ready service",
+        "description": "Containerize, test, deploy, monitor, and document a small web service."
+      },
+      "sources": [
+        {
+          "title": "Site Reliability Engineering",
+          "authors": "Beyer, Jones, Petoff, Murphy",
+          "url": "https://sre.google/sre-book/table-of-contents/",
+          "license": "Free to read on official site",
+          "access": "Free to read"
+        },
+        {
+          "title": "The Twelve-Factor App",
+          "authors": "Adam Wiggins",
+          "url": "https://12factor.net/",
+          "license": "MIT",
+          "access": "Openly remixable"
+        }
+      ]
+    },
+    {
+      "id": "secure-by-design",
+      "trackId": "security",
+      "title": "Secure by Design",
+      "shortTitle": "Secure by design",
+      "summary": "Learn defensive thinking, threat modeling, identity, cryptography basics, web risks, and secure development without exploit-first teaching.",
+      "level": "Intermediate",
+      "hours": 30,
+      "lessons": 9,
+      "prerequisites": [
+        "Designing Reliable Programs",
+        "Networks from First Principles recommended"
+      ],
+      "outcomes": [
+        "Model threats and trust boundaries",
+        "Apply least privilege and defense in depth",
+        "Explain encryption, hashing, and signatures",
+        "Prevent common web security failures"
+      ],
+      "modules": [
+        {
+          "title": "Think defensively",
+          "description": "Assets, adversaries, boundaries, and risk.",
+          "lessons": [
+            "What are we protecting?",
+            "Threat models",
+            "Design for least privilege"
+          ]
+        },
+        {
+          "title": "Trust and identity",
+          "description": "Authentication, authorization, and cryptographic tools.",
+          "lessons": [
+            "Identity is not permission",
+            "Hashes and encryption",
+            "Keys and certificates"
+          ]
+        },
+        {
+          "title": "Safer applications",
+          "description": "Input, sessions, dependencies, and verification.",
+          "lessons": [
+            "Validate at boundaries",
+            "Protect sessions",
+            "Secure development lifecycle"
+          ]
+        }
+      ],
+      "project": {
+        "title": "Security review dossier",
+        "description": "Threat-model a small application, improve its design, and document how each control reduces risk."
+      },
+      "sources": [
+        {
+          "title": "Building Secure & Reliable Systems",
+          "authors": "Adkins et al.",
+          "url": "https://google.github.io/building-secure-and-reliable-systems/raw/toc.html",
+          "license": "Free to read on official site",
+          "access": "Free to read"
+        },
+        {
+          "title": "OWASP Web Security Testing Guide",
+          "authors": "OWASP Foundation",
+          "url": "https://owasp.org/www-project-web-security-testing-guide/",
+          "license": "CC BY-SA 4.0",
+          "access": "Openly remixable"
+        }
+      ]
+    },
+    {
+      "id": "data-ai-foundations",
+      "trackId": "ai-data",
+      "title": "Data & AI Foundations",
+      "shortTitle": "Data and AI",
+      "summary": "Explore the full machine-learning workflow: frame a question, prepare data, train a model, evaluate honestly, and consider impact.",
+      "level": "Intermediate",
+      "hours": 40,
+      "lessons": 9,
+      "prerequisites": [
+        "Python: Your First Programs",
+        "Discrete Math for Builders recommended"
+      ],
+      "outcomes": [
+        "Explore and prepare tabular data",
+        "Explain learning as optimization from examples",
+        "Evaluate models beyond accuracy",
+        "Identify bias, leakage, and responsible-use concerns"
+      ],
+      "modules": [
+        {
+          "title": "Learn from data",
+          "description": "Questions, datasets, features, and uncertainty.",
+          "lessons": [
+            "Frame the question",
+            "Meet your data",
+            "Train and test"
+          ]
+        },
+        {
+          "title": "Core models",
+          "description": "Regression, classification, and neural networks.",
+          "lessons": [
+            "Linear models",
+            "Trees",
+            "Neural network intuition"
+          ]
+        },
+        {
+          "title": "Evaluate responsibly",
+          "description": "Metrics, failure analysis, and human impact.",
+          "lessons": [
+            "Choose a metric",
+            "Find model failures",
+            "Fairness and responsible use"
+          ]
+        }
+      ],
+      "project": {
+        "title": "Transparent prediction report",
+        "description": "Build a small model and publish a model card covering data, results, limitations, and appropriate use."
+      },
+      "sources": [
+        {
+          "title": "Dive into Deep Learning",
+          "authors": "Zhang, Lipton, Li, Smola",
+          "url": "https://d2l.ai/",
+          "license": "CC BY-SA 4.0",
+          "access": "Openly remixable"
+        },
+        {
+          "title": "Elements of Data Science",
+          "authors": "Allen B. Downey",
+          "url": "https://allendowney.github.io/ElementsOfDataScience/",
+          "license": "CC BY-NC-SA 4.0",
+          "access": "Openly remixable"
+        }
+      ]
+    },
+    {
+      "id": "crafting-language",
+      "trackId": "advanced",
+      "title": "Build Your Own Language",
+      "shortTitle": "Build a language",
+      "summary": "Bring together algorithms, systems, and software design by creating a programming language from scanner to virtual machine.",
+      "level": "Advanced",
+      "hours": 52,
+      "lessons": 9,
+      "prerequisites": [
+        "Data Structures in Practice",
+        "Inside a Computer",
+        "Designing Reliable Programs"
+      ],
+      "outcomes": [
+        "Implement scanning and parsing",
+        "Represent and evaluate syntax trees",
+        "Design lexical scope and functions",
+        "Build a bytecode virtual machine"
+      ],
+      "modules": [
+        {
+          "title": "Understand source",
+          "description": "Tokens, grammar, syntax trees, and errors.",
+          "lessons": [
+            "Scan characters",
+            "Parse expressions",
+            "Report useful errors"
+          ]
+        },
+        {
+          "title": "Make it run",
+          "description": "Evaluation, environments, and control flow.",
+          "lessons": [
+            "Tree-walk evaluation",
+            "Variables and scope",
+            "Functions and closures"
+          ]
+        },
+        {
+          "title": "Build a virtual machine",
+          "description": "Bytecode, stacks, memory, and optimization.",
+          "lessons": [
+            "Compile to bytecode",
+            "A stack machine",
+            "Garbage collection"
+          ]
+        }
+      ],
+      "project": {
+        "title": "A tiny useful language",
+        "description": "Design, implement, test, and document a small language with functions, closures, and a REPL."
+      },
+      "sources": [
+        {
+          "title": "Crafting Interpreters",
+          "authors": "Robert Nystrom",
+          "url": "https://craftinginterpreters.com/",
+          "license": "CC BY-NC-ND 4.0",
+          "access": "Free to read"
+        },
+        {
+          "title": "Introduction to Compilers and Language Design",
+          "authors": "Douglas Thain",
+          "url": "https://www3.nd.edu/~dthain/compilerbook/",
+          "license": "CC BY-NC-ND 4.0",
+          "access": "Free to read"
+        }
+      ]
+    }
+  ]
+}
